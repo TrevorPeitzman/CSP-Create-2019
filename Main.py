@@ -1,7 +1,7 @@
 
-import pollUsr.poll as poll
+import utils.poll as poll
 
-def roughtest():
+def macrocalc():
 
     age = poll.numeric_metric('age', 'years', 1, 100)
     height = poll.numeric_metric('height', 'inches', 24, 96)
@@ -12,4 +12,4 @@ def roughtest():
     return
 
 
-roughtest()
+macrocalc()
