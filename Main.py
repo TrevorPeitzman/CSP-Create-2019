@@ -13,6 +13,5 @@ def macrocalc():
     print (age, sex, weight)
     return
 
-
 macrocalc()
 
