@@ -1,5 +1,6 @@
 
 import utils.poll as poll
+import utils.conversions as conversions
 
 def macrocalc():
 
@@ -8,8 +9,10 @@ def macrocalc():
     weight = poll.numeric_metric('weight', 'pounds', 80, 400)
     sex = poll.alpha_metric('gender', 'M/F')
 
-    print str(age) + sex + weight
+    print conversions.bmi(height, weight)
+    print (age, sex, weight)
     return
 
 
 macrocalc()
+

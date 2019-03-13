@@ -15,7 +15,7 @@ def numeric_metric(desired_metric, units, lobound, hibound):
             print('Entry non-numeric / out of range.\nTry again.')
         else:
             if lobound < int(usr_input) < hibound and usr_input != str():
-                return usr_input
+                return int(usr_input)
             else:
                 print('Entry non-numeric / out of range.\nTry again.')
 
@@ -28,7 +28,12 @@ def alpha_metric(desired_metric, units):
 
     while True:
         usr_input = raw_input('Enter your ' + desired_metric + ' (' + units + '): ')
-        if usr_input == str():
-            return usr_input
-        else:
+        try:
+            str(usr_input) == usr_input
+        except:
             print('Entry not a string.\nTry again.')
+        else:
+            if str(usr_input) == 'M' or 'F':
+                return str(usr_input)
+            else:
+                print('Entry not a string.\nTry again.')
