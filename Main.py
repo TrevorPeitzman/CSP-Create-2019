@@ -9,6 +9,8 @@ def macrocalc():
     sex = poll.alpha_metric('gender', 'M/F')
 
     print conversions.bmi(height, weight)
+    print conversions.magnesium(age, sex)
+    print conversions.calcium(age, sex)
     print 'Optimal Hydration Level: ' + str(conversions.hydration(weight, age)) + ' liquid ounces/day'
     print (age, sex, weight)
 
