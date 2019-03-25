@@ -102,7 +102,6 @@ def potassium(age, sex):
 def sodium(age, sex):
 
     input = int(age)
- this is not done
     if input < 1:
         return 'Optimal Sodium: 550 mg'
     elif 1 <= input <= 3:
