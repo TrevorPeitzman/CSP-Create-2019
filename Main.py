@@ -11,6 +11,8 @@ def macrocalc():
     print conversions.bmi(height, weight)
     print conversions.magnesium(age, sex)
     print conversions.calcium(age, sex)
+    print conversions.potassium(age, sex)
+    print conversions.sodium(age, sex)
     print 'Optimal Hydration Level: ' + str(conversions.hydration(weight, age)) + ' liquid ounces/day'
     print (age, sex, weight)
 
