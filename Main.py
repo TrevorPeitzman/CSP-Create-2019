@@ -3,9 +3,10 @@ import utils.conversions as conversions
 import time
 import sys
 
-intromessage = '\033[1;34;m Hello and welcome to MacroCalc. This program will inform you of your optimal levels of' \
-                '\nnutritional macronutrients, vitamins, minerals, and hydration. First, we will begin by asking you' \
+intromessage = '\033[1;34;m Hello and welcome to MacroCalc. This program will inform you of your optimal daily levels' \
+                '\nof nutritional macronutrients, vitamins, minerals, and hydration. First, we will ask you' \
                 '\na few questions about yourself. Let us begin...\n \033[1;37;m'
+
 
 def macrocalc():
 
@@ -19,14 +20,13 @@ def macrocalc():
     weight = poll.numeric_metric('weight', 'pounds', 80, 400)
     sex = poll.alpha_metric('gender', 'M/F')
 
-    print 'Your BMI is: ' + str(round(conversions.bmi(height, weight), 2))
-    print conversions.bmi(height, weight)
+    print '\nYour BMI is: ' + str(round(conversions.bmi(height, weight), 2))
     print conversions.magnesium(age, sex)
     print conversions.calcium(age, sex)
     print conversions.potassium(age, sex)
     print conversions.sodium(age, sex)
-    print 'Optimal Hydration Level: ' + str(conversions.hydration(weight, age)) + ' liquid ounces/day'
-    print (age, sex, weight)
+    print 'Optimal Water Intake: ' + str(conversions.hydration(weight, age)) + ' liquid ounces/day'
+    print '\n\033[1;34;m Thank you for using MacroCalc. Have a great day.'
 
     return
 

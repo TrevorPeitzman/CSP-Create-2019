@@ -27,13 +27,18 @@ def alpha_metric(desired_metric, units):
     units -> string"""
 
     while True:
+        # Poll user forever
         usr_input = raw_input('Enter your ' + desired_metric + ' (' + units + '): ')
         try:
+            # Attempt to cast the input to a string
             str(usr_input) == usr_input
         except:
+            # If casting fails, print
             print('Entry not a string.\nTry again.')
         else:
+            # return the input if it matches the desired input
             if str(usr_input) == 'M' or 'F':
                 return str(usr_input)
             else:
+                # otherwise print an error
                 print('Entry not a string.\nTry again.')
