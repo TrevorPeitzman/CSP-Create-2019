@@ -1,3 +1,5 @@
+# I completed this entire section of code independently
+
 def numeric_metric(desired_metric, units, lobound, hibound):
     """Prompts user to provide a number 'desired_metric' with the units 'units'.
     Before returning user input, function validates number is in range using
