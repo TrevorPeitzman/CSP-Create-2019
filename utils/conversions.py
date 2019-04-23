@@ -1,15 +1,18 @@
 def bmi(height, weight):
     """"Simple math to calculate BMI based on height and weight, returns float
-        sourced from https://www.cdc.gov/healthyweight/assessing/bmi/childrens_bmi/childrens_bmi_formula.html
+        Math sourced from https://www.cdc.gov/healthyweight/assessing/bmi/childrens_bmi/childrens_bmi_formula.html
+        The code for this function I wrote independently
     """
 
     output = 703 * (float(weight)/(height**2))
     return float(output)
 
+#---- All code below this line was written by my collaborative partner ----#
 
 def hydration(weight, age):
     """Determines optimal hydration amount in fl.oz/day based on weight and age
         Data sourced from https://www.goodhousekeeping.com/health/diet-nutrition/a46956/how-much-water-should-i-drink/
+        This function was written by my collaborative partner
     """
 
     # Set variable factor based on age of user
@@ -31,6 +34,7 @@ def hydration(weight, age):
 def calcium(age, sex):
     """Determines optimal calcium amount in mg based on age and sex
         Data sourced from https://ods.od.nih.gov/factsheets/Calcium-Consumer/
+        This function was written by my collaborative partner
     """
 
     # Cast the input age to an int
@@ -64,6 +68,7 @@ def calcium(age, sex):
 def magnesium(age, sex):
     """Determines optimal magnesium amount in mg based on age and sex
         Data sourced from https://ods.od.nih.gov/factsheets/Magnesium-Consumer/
+        This function was written by my collaborative partner
     """
 
     # Cast the input age to an int
@@ -100,6 +105,7 @@ def magnesium(age, sex):
 def potassium(age, sex):
     """Determines optimal potassium amount in mg based on age and sex
         Data sourced from https://ods.od.nih.gov/factsheets/Potassium-Consumer/
+        This function was written by my collaborative partner
     """
 
     # Cast the input age to an int
@@ -137,6 +143,7 @@ def potassium(age, sex):
 def sodium(age, sex):
     """Determines optimal sodium amount in mg based on age and sex
         Data sourced from https://ods.od.nih.gov/factsheets/Potassium-Consumer/
+        This function was written by my collaborative partner
     """
 
     # Cast the input age to an int
